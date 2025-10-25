@@ -40,22 +40,13 @@ public class Text_Based_Adventure_Game_Project {
                 choice3 = scanner.nextLine();
 
                 if (choice3.equalsIgnoreCase("yes")) {
-                    if (hasIronSword) {
-                        System.out.println("You have defeated the dragon!");
-                        int reward = 1000;
-                        System.out.println("You have been rewarded with " + reward + " gold!");
-                        gold += reward;
-                        System.out.println("You now have " + gold + " gold");
-                        System.out.println("Congratulations, " + name + "! You WON!");
-                        System.out.println("You go back home to enjoy your riches and life as a hero!");
-                    }else {
-                        health -= 20;
-                        if (health <= 0) {
-                            System.out.println("You have been killed. You Lost ");
-                        } else {
-                            System.out.println("You have survived and ran back to your home. The Adventure Ends");
-                        }
-                    }
+                    System.out.println("You have defeated the dragon!");
+                    int reward = 1000;
+                    System.out.println("You have been rewarded with " + reward + " gold!");
+                    gold += reward;
+                    System.out.println("You now have " + gold + " gold");
+                    System.out.println("Congratulations, " + name + "! You WON!");
+                    System.out.println("You go back home to enjoy your riches and life as a hero!");
                 }else {
                     System.out.println("You flee from the dragon and return home safely.");
                     System.out.println("You survived, but you will always wonder what could have been...");
